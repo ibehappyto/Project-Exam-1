@@ -1,0 +1,1560 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Project SpaceX */
+
+/* Fullscreen */
+
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+
+h1 {
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+    
+h3 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #0b0b0b;
+    z-index: 1000;
+}
+
+.inner-nav {
+    width: 970px;
+    height: 75px;
+    margin: 0 auto;
+    position: relative;
+}
+    
+.mobile-logo {
+    float: left;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-image: url("../image/spacex_logo_white.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 180px;
+    height: 22px;
+}
+    
+    
+.button-view-nav {
+    right: 0;;
+    top:0;
+    position: absolute;
+    visibility: hidden;
+    width: 60px;
+    height: 100%;
+    background-color: #0b0b0b;
+    background-image: url("../image/hamburger-menu.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+}
+    
+.button-view-nav:hover {
+    opacity: 0.7;
+}
+    
+    
+.main-nav ul li {
+    display: inline-block;
+    margin-top: 31px;
+    margin-bottom: 29px;
+    list-style: none;
+}
+    
+.main-nav ul li a {
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.main-dropdown {
+    display: none;
+    position: absolute;
+    left: 180px;
+    top: 75px;
+    background-color:#0b0b0b;
+    border-radius: 0 0 4px 4px;
+}
+
+.main-dropdown li {
+    display: block !important;
+}
+
+.dropdown {
+    display: inline-block
+}
+
+.dropdown:hover .main-dropdown {
+    display: block;
+}
+    
+.sidebar-nav {
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 0px;
+    height: calc(100vh - 60px);
+    padding: 0 5px;
+    background-color: #015183;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+    
+.sidebar-nav ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+}
+    
+    
+.sidebar-nav li {
+    line-height: 60px;
+    list-style: none;
+}
+    
+.sidebar-nav ul li span, .sidebar-nav ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #FFf;
+    font-family: Arial;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+    
+.sidebar-nav ul li a:hover {
+    background-color: #222;
+}
+
+/* Main */
+    
+.top-image.one {
+    background-image: url("../image/connectivity-image-resolution-reduction.JPG");
+    background-position: right;
+    background-size: cover;
+    height: 550px;
+}
+
+.top-text {
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.apply-button {
+    margin-top: 15px;
+    width: 160px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #FC3D21;
+    cursor: pointer;
+}
+
+
+.apply-button:hover {
+    background-color: #015183;
+}
+
+.space-programs-container {
+    width: 970px;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+}
+
+.space-programs-container button {
+    width: 300px;
+    height: 30px;
+    background-color: #FC3D21;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.space-programs-column button a {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.space-programs-column a {
+    padding: 0.5em;
+    display: block;
+    background-color: #FC3D21;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.space-programs-container, h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.space-programs-column {
+    float: left;
+    overflow: hidden;
+    width: 310px;
+    height: 290px;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.space-programs-column.three {
+    margin-right: 0;
+}
+
+.space-programs-column, h3 {
+    margin-bottom: 24px;
+}
+
+.space-programs-column a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.space-programs-column a:hover {
+    background-color: #015183;
+}
+
+.space-programs-image {
+    background-position: right;
+    background-size: cover;
+    width: 278px;
+    height: 181px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.space-programs-image.one {
+    background-image: url("../image/space-technology-resolution-reduction.jpg");
+}
+.space-programs-image.two {
+    background-image: url("../image/connectivity-image-resolution-reduction.JPG");
+}
+
+.space-programs-image.three {
+    background-image: url("../image/rocket-project-sweden-image-resolution-reduction.jpg");
+}
+
+/* Internship Review */
+
+
+.internship-container {
+    clear: both;
+    margin-top: 50px;
+}
+
+.internship-review-feedback-container {
+    overflow: auto;
+    height: auto;
+}
+
+.internship-review-feedback-container.one {
+    background-color: #015183;
+}
+
+.internship-review-feedback-container.three {
+    background-color: #015183;
+}
+
+
+.internship-container, h2 {
+    text-align: center;
+}
+
+.internship-inside-container {
+    overflow: auto;
+    width: 970px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.intern-review-image {
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    float: left;
+
+}
+
+.intern-review-image.one {
+    background-image: url("../image/face-intern1.jpg");
+}
+
+.intern-review-image.two {
+    background-image: url("../image/face-intern2.jpg");
+    background-size: contain;
+    
+}
+
+.intern-review-image.three {
+    background-image: url("../image/face-intern3.jpg");
+}
+
+.intern-review-image.four {
+    background-image: url("../image/face-intern4.jpg");
+}
+
+.intern-review-text {
+    font-style: italic;
+    font-size: 18px;
+    float: left;
+    line-height: 28px;
+    width: 700px;
+    margin-top: 15px;
+}
+
+.intership-container, p:nth-child(2) {
+    margin-top: 50px;
+  }
+
+.apply-button.two {
+    margin-bottom: 50px;
+}
+
+/* footer */
+
+footer {
+    background-color: #0b0b0b;
+}
+
+.footer {
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.bottom-nav-container {
+    width: 960px;
+    padding-top: 19px;
+    margin: 0 auto;
+    background-color: #0b0b0b;
+}
+
+.footer-logo {
+    background-image: url("../image/spacex_logo_footer.png");
+    width: 95px;
+    height: 12px;
+    float: left;
+}
+
+.bottom-nav-container ul {
+    text-align: center;
+    float: left;
+    padding-left: 20px;
+}
+
+.bottom-nav-container, ul li {
+    display: inline-block;
+}
+
+.bottom-nav-container, ul li a {
+    padding-right:15px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.bottom-nav-container, ul li a:hover {
+    color: #015183;
+}
+
+/* Internship-information.html ------------> */ 
+
+.top-image.two {
+    background-image: url("../image/info-image.jpg");
+    background-size: cover;
+    height: 550px;
+}
+
+.breadcrumble {
+    overflow: auto;
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.breadcrumble ol {
+    padding-top: 16px;
+    margin-left: 20px;
+}
+
+.breadcrumble li {
+    display: inline-block;
+}
+
+.breadcrumble a {
+    color: #015183;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.breadcrumble a:hover {
+    color: #015183;
+}
+
+.internship-info-text {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+.internship-info-text ul {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.internship-info-text ul li {
+    margin-top: 10px;
+    display: list-item;
+    list-style-type: disc;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serifs;
+}
+
+
+
+.internship-info-text h2{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.internship-info-text p {
+    margin: 20px;
+}
+
+/* Application.html ------------> */ 
+
+
+.top-image.three {
+    background-image: url("../image/apply-image2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.internship-info-text.application {
+    margin-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+
+
+.internship-info-text.application h2 {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+.internship-info-text.application p {
+    margin-top: 10px;
+}
+
+.form-application{
+    padding-left: 3px;
+    width: 920px;
+    margin: 0 auto;
+}
+
+.form-application p{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.red-color {
+    color: red;
+}
+
+.firstname {
+    width: 110px;
+    display: block;
+}
+
+.middlename {
+    width: 110px;
+    margin-top: 10px;
+    display: block;
+}
+
+.lastname {
+    width: 157px;
+    margin-top: 10px;
+    display: block;
+}
+
+.currentaddress {
+    margin-top: 25px;
+}
+
+.address {
+    width: 310px;
+}
+
+.addresstwo {
+    width: 310px;
+    margin-top: 10px;
+}
+
+
+.citydiv {
+    float: left;
+    display: block;
+    margin-right: 12px;
+}
+
+.city {
+    width: 157px;
+    margin-top: 10px;
+}
+
+.statedivs {
+    float: right;
+    display: block;
+}
+
+.state {
+    width: 137px;
+    margin-top: 10px;
+}
+
+.postalzipcode {
+    margin-top: 10px;
+}
+
+.emailaddress {
+    margin-top: 25px;
+}
+
+.email {
+    width: 310px;
+}
+
+.phonenumber {
+    margin-top: 25px;
+}
+
+.areacode {
+    width: 90px;
+}
+
+.phone {
+    width: 137px;
+}
+
+.upload-document {
+    margin-top: 25px;
+}
+
+.file-upload-button {
+    margin-right: 50px;
+}
+
+.submit {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 81px;
+    height: 41px;
+    background-color: #015183;
+    color: white;
+   
+}
+
+/* SpacePrograms.html ------------> */ 
+
+.top-image.four {
+    background-image: url("../image/spaceprogram-image.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.breadcrumble.space {
+    margin: 0 auto;
+    width: 1050px;
+}
+
+.spaceprograms-container h3 {
+    margin-top: 20px;
+}
+
+.spaceprograms-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spaceprograms-container > div {
+    width: 300px;
+    margin: 15px;
+    background: white;
+    padding: 1em;
+}
+
+.spaceprograms-container > div .image {
+    height: 250px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.spaceprograms-container > div a {
+    padding: 0.5em;
+    display: block;
+    text-decoration: none;
+    background: white;
+    text-align: center;
+    color: white;
+    background:#FC3D21;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.spaceprograms-container > div a:hover {
+    background: #015183;
+}
+
+
+h1 + a {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: rgb(11, 91, 133);
+}
+
+/* article143.html ------------> */
+
+.top-image.article143 {
+    background-image: url("../image/flags.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.image-article143.one {
+    background-image: url("../image/world.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.image-article143.two {
+    background-image: url("../image/relations.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* article141.html ------------> */
+
+.top-image.article141 {
+    background-image: url("../image/earth.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.image-article141.one {
+    background-image: url("../image/moon-ship.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.image-article141.two {
+    background-image: url("../image/exciting-times.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* article143.html ------------> */
+
+.top-image.article139 {
+    background-image: url("../image/rocket-technology.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+
+/* article132.html ------------> */
+
+.top-image.article132 {
+    background-image: url("../image/rocket-project-sweden-image-resolution-reduction.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+/* article130.html ------------> */
+
+.top-image.article130 {
+    background-image: url("../image/connectivity-image-resolution-reduction.JPG");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+/* article127.html ------------> */
+
+.top-image.article127 {
+    background-image: url("../image/space-technology-resolution-reduction.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+/* About.html ------------> */
+
+.top-image.about {
+    background-image: url("../image/about-image.jpg");
+    background-position: right;
+    background-size: cover;
+    height: 550px;
+}
+
+/* Contact.html ------------> */
+
+.top-image.contact {
+    background-image: url("../image/contact-image.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 550px;
+}
+
+.form-application.contact p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contactmessage {
+    vertical-align: text-top;
+    width: 400px;
+    height: 200px;
+}
+
+@media screen and (max-width: 1025px) {
+/* Header */
+
+html, body {
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+}
+
+h1 {
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+    
+h3 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+    
+.mobile-logo {
+    margin: 0;
+    margin-left: 50px;
+    background-image: url("../image/spacex_logo_white.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 180px;
+    height: 60px;
+}
+    
+    
+.button-view-nav {
+    right: 0;;
+    top:0;
+    position: absolute;
+    visibility: visible;
+    width: 60px;
+    height: 100%;
+    background-color: #0b0b0b;
+    background-image: url("../image/hamburger-menu.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+}
+    
+.button-view-nav:hover {
+    opacity: 0.7;
+}
+    
+.main-nav ul {
+    display: none;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+    
+.main-nav ul li {
+    list-style: none;
+    line-height: 60px;
+}
+    
+.main-nav ul li a {
+    display: block;
+    height: 100%;
+    padding: 0 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    font-family: arial;
+    font-size: 16px;
+    }
+    
+.sidebar-nav {
+    visibility: hidden;
+    left: 0;
+    top: 60px;
+    width: 0px;
+    height: calc(100vh - 60px);
+    padding: 0 5px;
+    background-color: #015183;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+    
+.sidebar-nav ul {
+    padding-top: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+    
+    
+.sidebar-nav li {
+    line-height: 60px;
+    list-style: none;
+}
+    
+.sidebar-nav ul li span, .sidebar-nav ul li a {
+    display: block;
+    height: 40px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #FFf;
+    font-weight: 500;
+    font-family: Arial;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+    
+.sidebar-nav ul li a:hover {
+    background-color: #222;
+}
+
+/* Main */
+    
+
+.top-image.one {
+    background-image: url("../image/connectivity-image-resolution-reduction.JPG");
+    background-position: right;
+    background-size: cover;
+    height: 550px;
+}
+
+.top-text {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.apply-button {
+    margin-top: 15px;
+    width: 160px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #FC3D21;
+    cursor: pointer;
+}
+
+.space-programs-container {
+    text-align: center;
+    width: auto;
+}
+
+.space-programs-container, h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.space-programs-column {
+    float: none;
+    overflow: hidden;
+    width: 310px;
+    height: 290px;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+.space-programs-column.three {
+    margin-right: auto;
+}
+
+.space-programs-column, h3 {
+    margin-bottom: 24px;
+}
+
+.space-programs-image {
+    background-position: right;
+    background-size: cover;
+    width: 278px;
+    height: 181px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.space-programs-image.one {
+    background-image: url("../image/space-technology-resolution-reduction.jpg");
+}
+.space-programs-image.two {
+    background-image: url("../image/connectivity-image-resolution-reduction.JPG");
+}
+
+.space-programs-image.three {
+    background-image: url("../image/rocket-project-sweden-image-resolution-reduction.jpg");
+}
+
+/* Internship Review */
+
+
+.internship-container {
+    margin-top: 50px;
+}
+
+.internship-inside-container {
+    width: auto;
+    overflow: none;
+    height: auto;
+    padding: 0 20px;
+}
+
+.internship-review-feedback-container {
+    overflow: none;
+    height: auto;
+}
+
+.internship-review-feedback-container.one {
+    background-color: #015183;
+}
+
+
+.internship-review-feedback-container.three {
+    background-color: #015183;
+}
+
+
+.internship-container, h2 {
+    text-align: center;
+}
+
+.intern-review-image {
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    float: none;
+}
+
+.intern-review-image.one {
+    background-image: url("../image/face-intern1.jpg");
+}
+
+.intern-review-image.two {
+    background-image: url("../image/face-intern2.jpg");
+    background-size: contain;
+    
+}
+
+.intern-review-image.three {
+    background-image: url("../image/face-intern3.jpg");
+}
+
+.intern-review-image.four {
+    background-image: url("../image/face-intern4.jpg");
+}
+
+.intern-review-text {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+    width: auto;
+    float: none;
+}
+
+.intership-container, p:nth-child(2) {
+    margin-top: 50px;
+  }
+
+.apply-button.two {
+    margin-bottom: 50px;
+}
+
+/* footer */
+
+.footer {
+    width: auto;
+    overflow: auto;
+    height: 250px;
+}
+
+.bottom-nav-container {
+    width: auto;
+}
+
+.footer-logo {
+    background-image: url("../image/spacex_logo_footer.png");
+    width: 95px;
+    height: 12px;
+    margin: 0 auto;
+    float: none;
+}
+
+.bottom-nav-container ul {
+    text-align: center;
+    float: none;
+    padding-left: 0;
+}
+
+.bottom-nav-container, ul li {
+    margin-top: 20px;
+    display: block;
+}
+
+.bottom-nav-container, ul li a {
+    padding-right: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.bottom-nav-container, ul li a:hover {
+    color: #015183;
+}
+
+
+/* Internship-information.html ------------> */ 
+
+.top-image.two {
+    background-image: url("../image/info-image.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 550px;
+}
+
+.breadcrumble {
+    overflow: auto;
+    width: 320px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.breadcrumble ol {
+    padding-top: 16px;
+    margin-left: 20px;
+}
+
+.breadcrumble li {
+    display: inline-block;
+}
+
+.breadcrumble a {
+    color: #015183;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.breadcrumble a:hover {
+    color: #015183;
+}
+
+.internship-info-text {
+    width: 320px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.internship-info-text h2{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.internship-info-text p {
+    margin: 20px;
+}
+
+/* Application.html ------------> */ 
+
+
+.top-image.three {
+    background-image: url("../image/apply-image2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.internship-info-text.application {
+    margin-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+
+
+.internship-info-text.application h2 {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+.internship-info-text.application p {
+    margin-top: 10px;
+}
+
+.form-application{
+    padding-left: 3px;
+    width: 270px;
+    margin: 0 auto;
+}
+
+.form-application p{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.red-color {
+    color: red;
+}
+
+.firstname {
+    width: 110px;
+    display: block;
+}
+
+.middlename {
+    width: 110px;
+    margin-top: 10px;
+    display: block;
+}
+
+.lastname {
+    width: 157px;
+    margin-top: 10px;
+    display: block;
+}
+
+.currentaddress {
+    margin-top: 25px;
+}
+
+.address {
+    width: 310px;
+}
+
+.addresstwo {
+    width: 310px;
+    margin-top: 10px;
+}
+
+
+.citydiv {
+    float: left;
+    display: block;
+    margin-right: 12px;
+}
+
+.city {
+    width: 157px;
+    margin-top: 10px;
+}
+
+.statedivs {
+    float: right;
+    display: block;
+}
+
+.state {
+    width: 137px;
+    margin-top: 10px;
+}
+
+.postalzipcode {
+    margin-top: 10px;
+}
+
+.emailaddress {
+    margin-top: 25px;
+}
+
+.email {
+    width: 310px;
+}
+
+.phonenumber {
+    margin-top: 25px;
+}
+
+.areacode {
+    width: 90px;
+}
+
+.phone {
+    width: 137px;
+}
+
+.upload-document {
+    margin-top: 25px;
+}
+
+.file-upload-button {
+    margin-right: 50px;
+}
+
+.submit {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 81px;
+    height: 41px;
+    background-color: #015183;
+    color: white;
+   
+}
+
+/* SpacePrograms.html ------------> */ 
+
+.top-image.four {
+    background-image: url("../image/spaceprogram-image.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.spaceprograms-container h3 {
+    margin-top: 20px;
+}
+
+.spaceprograms-container {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spaceprograms-container > div {
+    width: 300px;
+    margin: 15px;
+    background: white;
+    padding: 1em;
+}
+
+.spaceprograms-container > div .image {
+    height: 250px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.spaceprograms-container > div a {
+    padding: 0.5em;
+    display: block;
+    text-decoration: none;
+    background: white;
+    text-align: center;
+    color: white;
+    background:#FC3D21;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 + a {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: rgb(11, 91, 133);
+}
+
+/* article143.html ------------> */
+
+.top-image.article143 {
+    background-image: url("../image/flags.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.top-image.article143 {
+    background-image: url("../image/flags.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+
+/* article143.html ------------> */
+
+.top-image.article141 {
+    background-image: url("../image/earth.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+/* article143.html ------------> */
+
+.top-image.article139 {
+    background-image: url("../image/rocket-technology.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+/* article132.html ------------> */
+
+.top-image.article132 {
+    background-image: url("../image/rocket-project-sweden-image-resolution-reduction.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+/* article130.html ------------> */
+
+.top-image.article130 {
+    background-image: url("../image/connectivity-image-resolution-reduction.JPG");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+/* article127.html ------------> */
+
+.top-image.article127 {
+    background-image: url("../image/space-technology-resolution-reduction.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+/* About.html ------------> */
+
+.top-image.about {
+    background-image: url("../image/about-image.jpg");
+    background-position: right;
+    background-size: cover;
+    height: 550px;
+}
+
+/* Contact.html ------------> */
+
+.top-image.contact {
+    background-image: url("../image/contact-image.jpg");
+    background-position: right;
+    background-size: cover;
+    height: 550px;
+}
+
+.form-application.contact p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contactmessage {
+    vertical-align: text-top;
+    width: 400px;
+    height: 200px;
+}
+
+
+}
+
+@media only screen and (max-width: 1026px) and (min-width: 400px) {
+    /* Header */
+
+/* Internship-information.html ------------> */
+
+.breadcrumble {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.internship-info-text {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+/* Application.html ------------> */
+
+.form-application{
+    padding-left: 40px;
+    width: auto;
+    margin: 0 auto;
+}
+
+/* Space-programs.html ------------> */
+
+.breadcrumble.space {
+    margin: 0 auto;
+    width: 700px;
+}
+
+.spaceprograms-container {
+    width: auto;
+}
+
+}

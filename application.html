@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Internship - Application</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="inner-nav">
+                <a href="index.html" class="mobile-logo"></a>
+            <ul>
+                <div class="dropdown">
+                <li><a href="#">INTERNSHIP</a></li>
+                    <ul class="main-dropdown">
+                        <li><a href="internship-information.html">Information</a></li>
+                        <li><a href="application.html">Application</a></li>
+                    </ul>
+                </div>
+                <li><a href="spacePrograms.html">SPACE PROGRAMS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div> 
+        <div class="button-view-nav" onclick="viewNav()"></div> 
+    </nav>
+
+    <div class="sidebar-nav">
+        <ul>
+            <li><span>INTERNSHIP</span></li>
+            <li><a href="internship-information.html">Information</a></li>
+            <li><a href="application.html">Application</a></li>
+            <li><a href="spacePrograms.html">SPACE PROGRAMS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-container">
+        <div class="top-image three">
+            <div class="top-text three">
+                <h1>INTERNSHIP APPLICATION</h1>
+            </div>
+        </div>
+        <div class="breadcrumble">
+            <ol>
+                <a href="index.html"><li>Home > </li></a>
+                <a href="internship-information.html"><li>Internship Application</li></a>
+            </ol>
+        </div>
+
+        <div class="internship-info-text application">
+            <h2>Internship Application</h2>
+            <p>Please complete the form below to apply
+                for an internship with SpaceX.</p>
+        </div>
+
+
+        <div class="form-application">
+
+            <form action="applicationform.php" method="post">
+
+                <h3>Full Name <span class="red-color">*</span></h3>
+                    <input type="text" name="firstname" class="firstname">
+                    <p>First Name</p>
+                    <input type="text" name="middlename" class="middlename">
+                    <p>Middle Name</p>
+                    <input type="text" name="lastname" class="lastname">
+                    <p>Last Name</p>
+                <h3 class="currentaddress">Current Address</h3>
+                    <input type="text" name="address" class="address">
+                    <p>Street Address</p>
+                    <input type="text" name="addresstwo" class="addresstwo">
+                    <p>Street Address 2</p>
+                    <div class="citydiv">
+                        <input type="text" name="city" class="city">
+                        <p>City</p>
+                    </div>
+                    <div class="statediv">
+                        <input type="text" name="state" class="state">
+                        <p>State/Province</p>
+                    </div>
+                    <input type="text" name="postalzipcode" class="postalzipcode">
+                    <p>Postal / Zip Code</p>
+                <h3 class="emailaddress">Email Address <span class="red-color">*</span></h3>
+                    <input type="email" name="email" class="email">
+                    <p>example@example.com</p>
+                <h3 class="phonenumber">Phone Number</h3>
+                <div class="citydiv">
+                    <input type="text" name="areacode" class="areacode">
+                    <p>Aread Code</p>
+                </div>
+                <div class="statediv">
+                    <input type="text" name="phone" class="phone">
+                    <p>Phone Number</p>
+                </div>
+                <h3 class="upload-document">Upload Document <span class="red-color">*</span></h3>
+                    <input type="file" name="file" class="file">
+                    <input type="submit" class="submit">
+
+            </form>
+
+        </div>
+     
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="bottom-nav-container">
+                <div class="footer-logo">
+                </div>
+                <ul>
+                    <li><a href="internship-information.html">INFORMATION</a></li>
+                    <li><a href="application.html">APPLICATION</a></li>
+                    <li><a href="spacePrograms.html">SPACE PROGRAMS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+</html>

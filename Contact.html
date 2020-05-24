@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Internship - Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="inner-nav">
+                <a href="index.html" class="mobile-logo"></a>
+            <ul>
+                <div class="dropdown">
+                <li><a href="#">INTERNSHIP</a></li>
+                    <ul class="main-dropdown">
+                        <li><a href="internship-information.html">Information</a></li>
+                        <li><a href="application.html">Application</a></li>
+                    </ul>
+                </div>
+                <li><a href="spacePrograms.html">SPACE PROGRAMS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div> 
+        <div class="button-view-nav" onclick="viewNav()"></div> 
+    </nav>
+
+    <div class="sidebar-nav">
+        <ul>
+            <li><span>INTERNSHIP</span></li>
+            <li><a href="internship-information.html">Information</a></li>
+            <li><a href="application.html">Application</a></li>
+            <li><a href="spacePrograms.html">SPACE PROGRAMS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-container">
+        <div class="top-image contact">
+            <div class="top-text three">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+        <div class="breadcrumble">
+            <ol>
+                <a href="index.html"><li>Home > </li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ol>
+        </div>
+
+        <div class="internship-info-text application">
+            <h2>Contact</h2>
+            <p>Please contact us on the form below and we will reply as soon as possible.</p>
+        </div>
+
+
+        <div class="form-application contact">
+
+            <form action="contactform.php" method="post">
+
+                    <p>Your Name (Required)</p>
+                    <input type="text" name="name" class="contactname">
+                    <p>Your Email (Required)</p>
+                    <input type="email" name="email" class="contactmail">
+                    <p>Subject</p>
+                    <input type="text" name="subject" class="contactsubject">
+                    <p>Your Message</p>
+                    <textarea name="contactmessage" id="" cols="40" rows="10"></textarea>
+                    <input type="submit" value="Send" class="submit">
+                    
+            </form>
+
+        </div>
+     
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="bottom-nav-container">
+                <div class="footer-logo">
+                </div>
+                <ul>
+                    <li><a href="internship-information.html">INFORMATION</a></li>
+                    <li><a href="application.html">APPLICATION</a></li>
+                    <li><a href="spacePrograms.html">SPACE PROGRAMS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+</html>
